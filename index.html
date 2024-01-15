@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
     <header>
-
+        <nav>
+            <div>
+                <img src="./styles/Images/Group 40071 (2).png" alt="logo loading...">
+                <h1>Journey <span>Ease</span></h1>
+            </div>
+            <ul>
+                <li class="home">Home</li>
+                <li>Packages</li>
+                <li>Testimonial</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <div class="nav-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#131318" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </nav>
     </header>
     <main>
-
+        <section class="banner">
+            <div>
+                <h1>Explore Your Travel</h1>
+                <p>Discover simplicity in travel planning and make every journey a joyous experience. Find
+                    budget-friendly options, and create lasting memories with Journey Ease</p>
+                <div class="banner-selections">
+                    <input type="text" id="where-go" placeholder="Where go">
+                    <select name="when" id="when">
+                        <option value="--when--">When</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                    </select>
+                    <select name="select-type" id="select-type">
+                        <option value="--select-type--">Select Type</option>
+                        <option value="budget-explorer">Budget Explorer</option>
+                        <option value="mid-range">Mid Range</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="economic">Economic</option>
+                    </select>
+                    <button id="banner-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51031 2.99927 6.60258 3.78947 5.196 5.19605C3.78943 6.60262 2.99922 8.51035 2.99922 10.4995C2.99922 12.4887 3.78943 14.3965 5.196 15.803C6.60258 17.2096 8.51031 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Find Now
+                    </button>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
