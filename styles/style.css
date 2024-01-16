@@ -8,6 +8,22 @@ body{
     padding-top: 50px;
     margin: 0 auto;
 }
+h1{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 162.5%;
+    margin: 30px auto;
+}
 /* nav section */
 nav{
     width: 85%;
@@ -65,20 +81,12 @@ nav li {
 }
 .banner h1{
     color: #FFF;
-    text-align: center;
-    font-family: Mulish;
     font-size: 3.8rem;
-    font-weight: 800;
 }
 .banner div p{
     margin: 24px auto 48px auto;
     width: 56%;
     color: #FFF;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 162.5%
 }
 .banner-selections{
     margin: 0 auto;
@@ -133,16 +141,13 @@ nav li {
     flex-direction: column;
     width: 48%;
 }
-.popular-tours-content h1{
-    color: #131318;
-    font-family: Mulish;
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-.popular-tours-content p, .popular-tours-content ul{
-    color: rgba(19, 19, 24, 0.70);
+.popular-tours-content h1, .popular-tours-content p, .popular-tours-content ul{
+    text-align: start;
     margin: 15px 0;
-    font-family: Mulish;
+}
+.popular-tours-content ul{
+    text-align: start;
+    color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
     line-height: 162.5%;
@@ -177,22 +182,8 @@ nav li {
     justify-content: center;
     align-items: center;
 }
-.destination-content h1{
-    color: #131318;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 2.5rem;
-    font-weight: 800;
-}
 .destination-content p{
     width: 56%;
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 162.5%;
-    margin: 25px 0 50px 0;
 }
 .destination-img div{
     display: flex;
@@ -249,19 +240,85 @@ nav li {
     grid-column: 6/13;
     grid-row: 3/4;
 }
-
+/* choose us section */
+.choose-us{
+    margin: 50px auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choose-us p{
+    width: 56%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.card-1, .card-2, .card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    height: auto;
+    padding: 50px;
+}
+.card-1 svg, .card-2 svg, .card-3 svg{
+    width: 64px;
+    height: 64px;
+}
+.card-1 h2, .card-2 h2, .card-3 h2{
+    color: #131318;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.card-1 p, .card-2 p, .card-3 p{
+    width: 95%;
+    text-align: start;
+    margin: 30px 0;
+}
+.card-1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-2{
+    grid-column: 5/9;
+    grid-row: 1/2;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-3{
+    grid-column: 3/7;
+    grid-row: 2/3;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
 
 /* media query */
 @media screen and (max-width: 600px){
     /* nav section */
-    nav div{
-        font-size: 1rem;
+    nav div img{
+        width: 30px;
+        height: auto;
+    }
+    nav div h1{
+        font-size: 1.25rem;
     }
     nav ul{
         display: none;
     }
     .nav-svg{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 24px;
         height: 24px;
     }
@@ -321,5 +378,36 @@ nav li {
     }
     .destination-img div{
         height: 175.393px;
+    }
+    /* choose us section */
+    .choose-us{
+        margin: 15px auto;
+    }
+    .choose-us h1{
+        font-size: 1.25rem;
+        margin: 15px auto;
+    }
+    .choose-us p{
+        width: 85%;
+        margin: 15px auto;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1, .card-2, .card-3{
+        padding: 20px;
+    }
+    .card-1 svg, .card-2 svg, .card-3 svg{
+        width: 48px;
+        height: 48px;
+    }
+    .card-1 h2, .card-2 h2, .card-3 h2{
+        margin: 15px 0;
+        font-size: 1.25rem;
+    }
+    .card-1 p, .card-2 p, .card-3 p{
+        width: 100%;
+        margin: 0;
     }
 }
