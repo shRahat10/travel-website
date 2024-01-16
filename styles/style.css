@@ -24,6 +24,18 @@ p{
     line-height: 162.5%;
     margin: 30px auto;
 }
+button{
+    width: 150px;
+    height: 52px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
 /* nav section */
 nav{
     width: 85%;
@@ -301,9 +313,103 @@ nav li {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+/* deals-discounts */
+.deals-discounts{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deals-discounts p{
+    width: 65%;
+}
+.deals-discounts-cont-1{
+    background-image: url("./Images/Group-39.png");
+}
+.deals-discounts-cont-2{
+    background-image: url("./Images/Group-40.png");
+}
+.deals-discounts-cont-3{
+    background-image: url("./Images/Group-39.png");
+}
+.deals-discounts-cont-1, .deals-discounts-cont-2, .deals-discounts-cont-3{
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.deals-discounts-card{
+    width: 50%;
+    height: max-content;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 35px;
+    margin-right: 50px;
+}
+.deals-discounts-cont-2{
+    flex-direction: row;
+}
+.deals-discounts-cont-2 .deals-discounts-card{
+    margin-left: 50px;
+}
+.deals-discounts-card h1, .deals-discounts-card p, .deals-discounts-card h2{
+    text-align: start;
+    margin: 15px 0;
+    width: 100%;
+}
+.p2{
+    display: none;
+}
+.time-location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.time-location div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.deals-discounts-card h1{
+    font-size: 1.5rem;
+}
+.deals-discounts-card p{
+    color: #5A5A5D;
+}
+.deals-discounts-card h2{
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.package-btn{
+    width: 210px;
+}
+
+
 
 /* media query */
 @media screen and (max-width: 600px){
+    button{
+    width: 130px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    }
     /* nav section */
     nav div img{
         width: 30px;
@@ -409,5 +515,38 @@ nav li {
     .card-1 p, .card-2 p, .card-3 p{
         width: 100%;
         margin: 0;
+    }
+    /* deals-discounts */
+    .deals-discounts-cont-1, .deals-discounts-cont-2, .deals-discounts-cont-3{
+        align-items: flex-end;
+        margin-bottom: 15px;
+    }
+    .deals-discounts h1{
+        font-size: 1.25rem;
+        margin: 15px auto;
+    }
+    .deals-discounts p{
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .time-location{
+        width: 95%;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        gap: 15px;
+    }
+    .deals-discounts-card, .deals-discounts-cont-2 .deals-discounts-card{
+        width: 100%;
+        margin: 15px;
+    }
+    .deals-discounts-card h2{
+        font-size: 1rem;
+    }
+    .p1{
+        display: none;
+    }
+    .p2{
+        display: flex;
     }
 }
