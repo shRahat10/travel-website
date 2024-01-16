@@ -495,8 +495,8 @@ hr{
     align-items: end;
 }
 .discount{
-    width: 45%;
-    height: 25%;
+    width: 324px;
+    height: 120px;
     transform-origin: left;
     transform: rotate(-19.628deg);
     flex-shrink: 0;
@@ -518,6 +518,39 @@ hr{
     font-weight: 800;
     margin: 0;
 }
+/* footer */
+footer{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 19, 24, 0.05);
+}
+footer div{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 2rem;
+    color: #131318;
+}
+footer div span{
+    color: #FF5400;
+}
+footer div img{
+    width: 40px;
+    height: auto;
+}
+footer p{
+    width: 90%;
+}
+footer svg{
+    margin-bottom: 50px;
+}
+
+
 
 
 /* media query */
@@ -713,11 +746,21 @@ hr{
     .input-img{
         height: 300px;
     }
+    .discount{
+        width: 214.023px;
+        height: 79.268px;
+    }
     .discount p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .discount h1{
         font-size: 1.25rem;
     }
-    
+    /* footer section */
+    footer div h1{
+        font-size: 1.25rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
 }
